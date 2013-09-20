@@ -10,21 +10,21 @@ $(document).ready(function() {
 	$('#example').dataTable( {
 	"iDisplayLength": 70,
 		"aaData": [
-            ["ak", "2013-04-09", "kasahorow (alias), one bug", 4, "Dwayne"],
-            ["an", "2013-09-12", "Daniel, toniher, pascalc", 3, "pascalc"],
-            ["az", "2013-07-17", "- (just pings)", 3, "Selim"],
-            ["lg", "2013-05-22", "San James", 3, "Dwayne"],
-            ["mn", "-", "-", 0, "Arky"],
-            ["ms", "2013-06-17", "Muhammad", 1, "Arky"],
-            ["my", "2013-09-10", "tinaunglinn", 6, "Arky"],
-            ["nso", "2013-05-08", "-", 1, "Dwayne"],
-            ["oc", "2013-06-25", "Cedric", 3, "?"],
-            ["sah", "2013-05-22", "Vassily, not from Halan", 0, "Arky"],
-            ["son", "2013-06-05", "Mohomodou", 1, "Dwayne"],
-            ["sw", "-", "- , Alex not interested?", 8, "Arky"],
-            ["ur", "2013-08-21", "Huda", 5, "?"],
-            ["wo", "2013-04-24", "-", 2, "?"],
-            ["zu", "2012-08-30", "-", 0, "Arky"]
+            ["ak", "2013-04-09", "kasahorow (alias), one bug", 4, "Dwayne", "beta", "no", ""],
+            ["an", "2013-09-12", "Daniel, toniher, pascalc", 3, "pascalc", "aurora", "yes", ""],
+            ["az", "2013-07-17", "- (just pings)", 3, "Selim", "aurora", "no", ""],
+            ["lg", "2013-05-22", "San James", 3, "Dwayne", "release?", "yes", ""],
+            ["mn", "-", "-", 0, "Arky", "beta", "no", ""],
+            ["ms", "2013-06-17", "Muhammad", 1, "Arky", "aurora", "no", ""],
+            ["my", "2013-09-10", "tinaunglinn", 6, "Arky", "aurora", "no", ""],
+            ["nso", "2013-05-08", "-", 1, "Dwayne", "beta", "yes", ""],
+            ["oc", "2013-06-25", "Cedric", 3, "Pascal", "aurora", "no", ""],
+            ["sah", "2013-05-22", "Vassily, not from Halan", 0, "Arky", "aurora", "no", ""],
+            ["son", "2013-06-05", "Mohomodou", 2, "Dwayne", "beta", "yes", ""],
+            ["sw", "-", "- , Alex not interested?", 8, "Arky", "aurora", "no", ""],
+            ["ur", "2013-08-21", "Huda", 5, "?", "aurora", "no", ""],
+            ["wo", "2013-04-24", "-", 2, "?", "aurora", "no", ""],
+            ["zu", "2012-08-30", "-", 0, "Arky", "beta", "yes", ""]
 		],
 		"aoColumns": [
 			{ "sTitle": "Locale" },
@@ -32,6 +32,9 @@ $(document).ready(function() {
 			{ "sTitle": "who" },
 			{ "sTitle": "members", "sType":"numeric" , "sClass":"center"},
 			{ "sTitle": "Mentor"}
+			{ "sTitle": "Current channel"}
+			{ "sTitle": "Langpack on AMO?"}
+			{ "sTitle": "# of users"}
 		],
 "aaSorting": [[ 0, "asc" ]]
 	} );	
